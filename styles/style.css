@@ -3,6 +3,11 @@
   width: 100%;
   height: 100%;
 }
+a:hover {
+  color: rgb(222, 239, 37);
+  transition: color 0.5s;
+}
+
 h1 {
   color: #f4a508;
   text-align: center;
@@ -48,11 +53,11 @@ img {
   /*this is the caption for the food images */
   color: #f1edee;
   font-size: 25px;
-  position: absolute;
 }
 .pic-scroll {
-  background-color: #776;
+  background-color: rgb(235, 204, 249);
   overflow: auto;
   white-space: nowrap;
   padding: 35px;
+  display: flex;
 }
