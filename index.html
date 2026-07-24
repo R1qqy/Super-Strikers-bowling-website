@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="scripts/main.js"> </script>
     <link href="styles/style.css" rel="stylesheet" />
     <title>Super Strikers Bowling</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
@@ -18,6 +19,7 @@
       <div class="banner-bookmarks">
         <a  href="#menu"> Food & Drinks</a>
         <a class="bookmark-spacing" href="#arcade"> Arcade</a>
+        <a class="bookmark-spacing" href="#booking"> Book Your Next Visit</a>
       </div>
     </div>
 
@@ -28,7 +30,7 @@
       your next event or birthday party!
     </p>
     <br />
-    <h2 class="food-arcade" id="menu">Menu</h2>
+    <h2 class="heading2" id="menu">Menu</h2>
      <div class="pic-scroll">
       <figure> 
        <img src="images/nachos.jpg" class=".food-info"/> <figcaption>Delicious fully loaded beef nachos.</figcaption>
@@ -46,7 +48,7 @@
   <img src="images/Strawberry-Tea.png"/> <class=".food-info"> <figcaption>Strawberry Tea.</figcaption>
 </figure>
     </div>
-<h2 class="food-arcade" id="arcade">Arcade Games</h2>
+<h2 class="heading2" id="arcade">Arcade Games</h2>
 <div class="arcade-color"> 
 <p class="arcade-text-right">
   Take the front seat in our arcade racing games. Play by yourself <br>
@@ -59,11 +61,17 @@
   Play classic and modern arcade games. <br> With single player and multiplayer games, the fun never ends! 
 </p>
 <img class="arcade-game" src="images/arcade-videogame.jpg" alt="a line up of arcade video games." />
-
 </div>
-
-
-
-
+<br> <br>
+<h2 class="heading2" >Book Your Party</h2>
+<br>
+<form name="myForm"  onsubmit="return validateForm()" >
+        <label for="booking"></label>
+    Schedule your next visit here
+        <input type="datetime-local" name="theDate">        <!--at first it was just date time local. adding more now-->
+      </label>
+  <button type="button"  onclick="myFunction()" >Submit</button>
+ <p id="booking"></p> 
+</form>
   </body>
 </html>

@@ -1,14 +1,17 @@
 #banner {
-  background-image: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+  background-image: linear-gradient(25deg, #6366f1 30%, #ec4899 100%);
   margin-left: -20px;
   margin-top: -40px;
   margin-right: -7px;
   margin-bottom: 50px;
 }
+html{ /*effects the bookmarks scroll */
+  scroll-behavior: smooth;  
+}
 .banner-bookmarks {
   display: inline-flex;
-  margin-left: 70px;
-}
+  margin-left: 470px;
+ }
 
 .bookmark-spacing {
   margin-left: 40px;
@@ -38,6 +41,7 @@ p {
   width: 1150px;
   margin: 0 auto;
   position: relative;
+  font-size: 25px;
 }
 #font-indented {
   /* the bio of the company */
@@ -45,8 +49,8 @@ p {
   color: black;
   text-indent: 50px;
 }
-.food-arcade {
-  /* for the menu and arcade games headings */
+.heading2 {
+  /* for the menu, arcade games and booking headings */
   color: cadetblue;
   font-size: 32px;
   text-align: center;
