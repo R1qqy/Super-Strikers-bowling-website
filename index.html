@@ -65,13 +65,13 @@
 <br> <br>
 <h2 class="heading2" >Book Your Party</h2>
 <br>
-<form name="myForm"  onsubmit="return validateForm()" >
+<form name="myForm" id="dayField" onsubmit="return validateForm()" >
         <label for="booking"></label>
     Schedule your next visit here
-        <input type="datetime-local" name="theDate">        <!--at first it was just date time local. adding more now-->
+        <input type="datetime-local" name="theDate" required>        <!--at first it was just date time local. adding more now-->
       </label>
-  <button type="button"  onclick="myFunction()" >Submit</button>
- <p id="booking"></p> 
+   <button  onclick="myFunction()" >Submit</button>   
+ <!--  <p id="booking"></p>     previously this was used to create a paragraph to confirm the booking -->
 </form>
   </body>
 </html>
